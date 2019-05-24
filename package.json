@@ -1,0 +1,23 @@
+{
+  "name": "javascript-practice-dcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdog72/dcode-Javascript-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdog72/dcode-Javascript-Practice/issues"
+  },
+  "homepage": "https://github.com/bdog72/dcode-Javascript-Practice#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
