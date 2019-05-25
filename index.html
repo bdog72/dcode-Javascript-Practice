@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Javascript Practice</title>
-    <style>
-      h1 {
-        text-align: center;
-      }
-      a {
-        display: flex;
-        justify-content: center;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PDF Viewer</title>
   </head>
   <body>
-    <h1>Javascript Practice</h1>
-    <a href="/html/progress-bar.html">Example 1</a>
-    <a href="/html/e.preventdefault.html">Example 2</a>
-    <a href="/html/template.html">Example 3</a>
-    <a href="/html/monsterJavascript.html">Example 4</a>
-    <script src="./app.js"></script>
+    <div class="top-bar">
+      <button class="btn" id="prev-page">
+        <i class="fas fa-arrow-circle-left"></i> Prev Page
+      </button>
+      <button class="btn" id="next-page">
+        Next Page <i class="fas fa-arrow-circle-right"></i>
+      </button>
+      <span class="page-info">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+      </span>
+    </div>
+    <canvas id="pdf-render"></canvas>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
